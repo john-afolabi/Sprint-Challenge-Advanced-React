@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
+import PlayerList from "./components/PlayerList";
 
 export default class App extends Component {
   state = {
