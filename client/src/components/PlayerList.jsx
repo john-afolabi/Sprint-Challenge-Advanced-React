@@ -3,7 +3,7 @@ import PlayerCard from "./PlayerCard";
 
 export default function PlayerList({ playersData }) {
   return (
-    <div>
+    <div className="mt-4">
       {playersData.map(player => {
         return (
           <PlayerCard

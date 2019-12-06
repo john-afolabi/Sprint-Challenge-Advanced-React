@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import PlayerList from "./components/PlayerList";
+import { Container } from "reactstrap";
 
 export default class App extends Component {
   state = {
@@ -21,6 +22,10 @@ export default class App extends Component {
   }
 
   render() {
-    return <PlayerList playersData={this.state.playersData} />;
+    return (
+      <Container>
+        <PlayerList playersData={this.state.playersData} />
+      </Container>
+    );
   }
 }
