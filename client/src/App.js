@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import PlayerList from "./components/PlayerList";
+import NavBar from "./components/NavBar";
 import { Container } from "reactstrap";
 
 export default class App extends Component {
@@ -24,6 +25,7 @@ export default class App extends Component {
   render() {
     return (
       <Container>
+        <NavBar />
         <PlayerList playersData={this.state.playersData} />
       </Container>
     );
