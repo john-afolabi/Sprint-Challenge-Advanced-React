@@ -6,7 +6,7 @@ import PlayerCard from "./PlayerCard";
 afterEach(rtl.cleanup);
 
 describe("Renders Player Card from props", () => {
-  const playercard = rtl.render(<PlayerCard name={Alex} country={United States} search={20}/>);
+  const playercard = rtl.render(<PlayerCard name={"Alex"} country={"United States"} search={20}/>);
   it("Should render Names", () => {
     expect(playercard.getByText(/alex/i))
   });   
