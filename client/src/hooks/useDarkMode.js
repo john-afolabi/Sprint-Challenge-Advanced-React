@@ -1,7 +1,8 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
+import useLocalStorage from "./useLocalStorage";
 
 export default function useDarkMode() {
-  const [value, setValue] = useState(false);
+  const [value, setValue] = useLocalStorage("darkmode", "false");
 
   useEffect(() => {
     const body = document.getElementsByTagName("body")[0];
