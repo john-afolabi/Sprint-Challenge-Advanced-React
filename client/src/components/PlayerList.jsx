@@ -7,6 +7,7 @@ export default function PlayerList({ playersData }) {
       {playersData.map(player => {
         return (
           <PlayerCard
+            key={player.id}
             name={player.name}
             country={player.country}
             searches={player.searches}
