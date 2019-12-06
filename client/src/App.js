@@ -5,9 +5,12 @@ import NavBar from "./components/NavBar";
 import { Container } from "reactstrap";
 
 export default class App extends Component {
-  state = {
-    playersData: []
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      playersData: []
+    };
+  }
 
   componentDidMount() {
     axios
